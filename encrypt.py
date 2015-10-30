@@ -1,0 +1,6 @@
+message = input("What is your message? ")
+key = input("What is your key? ")
+klen = len(key)
+encrypted = "".join([message[i] + key[i%klen] for i in range(len(message))])
+print("Encrypted message")
+print(encrypted)
